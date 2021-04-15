@@ -1,0 +1,9 @@
+{
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "bounded",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "prettier.tabWidth": 4,
+    "editor.detectIndentation": false,
+    "editor.wordWrapColumn": 160
+}
