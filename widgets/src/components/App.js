@@ -1,5 +1,10 @@
-import react from "react";
+import React, { useState } from "react";
+import Search from "./search";
 import Accordion from "./Accordion";
+import Dropdown from "./Dropdown";
+import Translate from "./Translate";
+import Route from "./Route";
+import Header from "./Header";
 
 const items = [
 	{
@@ -16,11 +21,44 @@ const items = [
 	},
 ];
 
+const options = [
+	{
+		label: "The Color Red",
+		value: "red",
+	},
+	{
+		label: "The Color Green",
+		value: "green",
+	},
+	{
+		label: "A Shade of Blue",
+		value: "blue",
+	},
+];
+
 const App = () => {
+	const [selected, setSelected] = useState(options[0]);
+
 	return (
 		<div>
-			<br />
-			<Accordion items={items} />
+			<Header />
+			<Route path="/">
+				<Accordion items={items} />
+			</Route>
+			<Route path="/list">
+				<Search />
+			</Route>
+			<Route path="/dropdown">
+				<Dropdown
+					options={options}
+					label="Select a color"
+					selected={selected}
+					onSelectedChange={setSelected}
+				/>
+			</Route>
+			<Route path="/translate">
+				<Translate />
+			</Route>
 		</div>
 	);
 };
