@@ -1,0 +1,31 @@
+{
+  "streams": [
+    {
+      "title": "stream1",
+      "description": "Stream number 1",
+      "id": 1
+    },
+    {
+      "title": "stream2",
+      "description": "Stream number 2",
+      "id": 2
+    },
+    {
+      "title": "Unexpected Behavior",
+      "description": "This change was made by a patch request",
+      "userId": "105102058947708478654",
+      "id": 4
+    },
+    {
+      "title": "Programmatic Navigation",
+      "description": "This stream is about refactoring",
+      "id": 5
+    },
+    {
+      "title": "Me Streaming Component Reuse!",
+      "description": "Watch me refactor some components",
+      "userId": "105102058947708478654",
+      "id": 6
+    }
+  ]
+}
